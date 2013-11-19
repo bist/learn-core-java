@@ -8,6 +8,14 @@ After each session, you'll be given a homework and these homeworks will be score
 
 End of the course, you'll also be given a test to score your skills. 40% of your homeworks and 60% of your test score will give you your final score.  Anyone below **7 overall will not be certified**!
 
+## How to Use
+
+This repository contains branches with day/session names. Any session that you want to work on, just type the branch name with topic like below:
+
+    git checkout day1-hello
+
+And now you can focus on the files introduced only in this session.
+
 ## Course Schedule
 
 ### Day 1
