@@ -17,7 +17,7 @@ End of the course, you'll also be given a test to score your skills. 40% of your
 * Introducing the Java language
 * Know your IDE – IntelliJ, Eclipse and Netbeans
 * Java syntax and class review, and a `Hello World` program
-* ** Day 1 Homework **
+* **Day 1 Homework**
 
 ### Day 2
 
@@ -25,55 +25,55 @@ End of the course, you'll also be given a test to score your skills. 40% of your
 * Using operators and decision constructs
 * Creating and using arrays
 * Using loop constructs
-* ** Day 2 Homework **
+* **Day 2 Homework**
 
 ### Day 3
 
 * Thinking in objects
 * Working with objects
 * Encapsulation, information hiding and polymorphism
-* ** Day 3 Homework **
+* **Day 3 Homework**
 
 ### Day 4
 
 * Inheritance with Java interfaces
 * Java class design
 * Advanced class design
-* ** Day 4 Homework **
+* **Day 4 Homework**
 
 ### Day 5
 
 * Working with methods, overriding and overloading
 * String processing
 * Generics and collections
-* ** Day 5 Homework **
+* **Day 5 Homework**
 
 ### Day 6
 
 * Handling Errors
 * I/O Fundamentals
 * File I/O with NIO2
-* ** Day 6 Homework **
+* **Day 6 Homework**
 
 ### Day 7
 
 * Threading
 * Concurrency
-* ** Day 7 Homework **
+* **Day 7 Homework**
 
 ### Day 8
 
 * Database connectivity
 * JDBC
 * Networking
-* ** Day 8 Homework **
+* **Day 8 Homework**
 
 ### Day 9
 
 * Java 7/8 Enhancements
 * Collective workshop
-* ** Day 9 Homework **
+* **Day 9 Homework**
 
 ### Day 10
 
-* ** Final Exam **
+* **Final Exam**
