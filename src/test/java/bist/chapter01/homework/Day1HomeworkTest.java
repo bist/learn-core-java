@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
 import java.io.PrintStream;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -24,8 +25,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * @version 1.0
  */
 public class Day1HomeworkTest {
-   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-   private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+   private final OutputStream outContent = new ByteArrayOutputStream();
+   private final OutputStream errContent = new ByteArrayOutputStream();
 
    @Before
    public void setUp() throws Exception {
