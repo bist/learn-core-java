@@ -26,13 +26,13 @@ And now you can focus on the files introduced only in this session. Once you are
 
     git checkout master
 
-When the course is over, you can get score of homeworks by typing:
+When the course is over, you can get the score of your homeworks by typing:
 
     git add -A .
     git commit -m 'Finished homeworks'
     git push origin master
 
-Please keep in mind that this score will only contribute 40% to the final score. Your final test and the final exam will be done in the last day. These are scored separately.
+Please keep in mind that this score will only contribute 20% to the final score. Your final test and the final exam will be done in the last day. These are scored separately.
 
 ## Course Schedule
 
