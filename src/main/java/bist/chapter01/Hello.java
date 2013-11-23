@@ -9,7 +9,7 @@
 
 package bist.chapter01;
 
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @version 1.0
