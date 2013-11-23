@@ -4,17 +4,35 @@
 
 This course is an internal course given in November 2013 for BIST developers. Course is divided into 10 half-day program. BEWARE! Each day you will be **pushed to your limits** to understand the dynamics of the language.
 
-After each session, you'll be given a homework and these homeworks will be scored (On a scale of **1 to 10**).
+After each session, you'll be given a homework and these homeworks will be scored (On a scale of **1 to 100**).
 
-End of the course, you'll also be given a test to score your skills. 40% of your homeworks and 60% of your test score will give you your final score.  Anyone below **7 overall will not be certified**!
+End of the course, you'll also be given a test and an assignment to score your skills. 20% of your homeworks, 30% of your test score and 50% of your final assignment will give you the final score.  Anyone below **70 overall will not be certified**!
 
 ## How to Use
 
-This repository contains branches with day/session names. Any session that you want to work on, just type the branch name with topic like below:
+First thing you need to do is to create a file called `AUTHOR`, you can do this by using your favorite editor. File has to contain your name like below:
+
+    John Doe
+
+Keep in mind that this repo **is not** designed for **checking in** your personal files. So bare with the instructors until the last day to check in. The repo contains branches with day/session names. Any session that you want to work on, just type the branch name with topic like below:
 
     git checkout day1-hello
 
-And now you can focus on the files introduced only in this session.
+To see all available sessions, type:
+
+    git branch
+
+And now you can focus on the files introduced only in this session. Once you are ready to work on the homeworks, go to the master branch and do your magic there:
+
+    git checkout master
+
+When the course is over, you can get score of homeworks by typing:
+
+    git add -A .
+    git commit -m 'Finished homeworks'
+    git push origin master
+
+Please keep in mind that this score will only contribute 40% to the final score. Your final test and the final exam will be done in the last day. These are scored separately.
 
 ## Course Schedule
 
