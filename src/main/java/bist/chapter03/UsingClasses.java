@@ -10,6 +10,7 @@
 package bist.chapter03;
 
 import bist.chapter03.types.SampleClass;
+import bist.chapter03.types.VariadicArguments;
 
 /**
  * @version 1.0
@@ -19,8 +20,11 @@ public class UsingClasses {
    public static void main(String[] args) {
 
       SampleClass myClass = new SampleClass();
-
       System.out.println(myClass.sampleMethodWithArgumentsAndReturnValue(3));
+
+      VariadicArguments varargs = new VariadicArguments();
+      varargs.printAllElements("john", "rambo");
+      varargs.printAllElements("superman", "batman", "robin", "cat-woman");
 
    }
 
