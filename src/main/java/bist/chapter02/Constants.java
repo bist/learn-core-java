@@ -14,11 +14,11 @@ package bist.chapter02;
  */
 public class Constants {
 
-   static final int times = 3;
+   static final int TIMES = 3;
 
    public static void main(String[] args) {
-      // times = 4; // cannot do
-      System.out.println("times = " + times);
+      // TIMES = 4; // cannot do
+      System.out.println("TIMES = " + TIMES);
    }
 
 }
