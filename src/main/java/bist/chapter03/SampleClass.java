@@ -9,14 +9,15 @@
 
 package bist.chapter03;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @version 1.0
  */
-@SuppressWarnings("UnusedDeclaration")
-public class SampleClass {
+@SuppressWarnings({"UnusedDeclaration", "ClassExplicitlyExtendsObject"})
+public class SampleClass extends Object implements Serializable {
    @Deprecated public final String aFinalField = "A_FINAL_FIELD";
    protected final List<Integer> listOfIntegers;
    int packageProtectedField = 0;
