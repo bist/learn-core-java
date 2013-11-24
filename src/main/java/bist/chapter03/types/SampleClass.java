@@ -7,7 +7,7 @@
  * All rights reserved. Copyright (c) 2013.
  ******************************************************************************/
 
-package bist.chapter03;
+package bist.chapter03.types;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -25,7 +25,8 @@ public class SampleClass extends Object implements Serializable {
 
 
    public SampleClass() {
-      listOfIntegers = new ArrayList<>();
+      // constructor delegation
+      this(new ArrayList<Integer>());
    }
 
    public SampleClass(@Deprecated List<Integer> listOfIntegers) {
@@ -37,6 +38,11 @@ public class SampleClass extends Object implements Serializable {
    }
 
    public String sampleMethodWithArgumentsAndReturnValue(int index) {
+      // method delegation
+      return this.sampleMethodWithArgumentsAndReturnValueButOverloaded(index, 0);
+   }
+
+   public String sampleMethodWithArgumentsAndReturnValueButOverloaded(int index, int base) {
       return "";
    }
 
