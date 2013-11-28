@@ -25,6 +25,15 @@ public class Interfaces {
       // passing to a method
       flyMyGoose(goose);
       swimMyDuck(duck);
+
+      // creating an anonymous class
+      CanFly anonymous = new CanFly() {
+         @Override
+         public void fly() {
+            System.out.println("Yeap, I can create classes like this!");
+         }
+      };
+      anonymous.fly();
    }
 
    private static void swimMyDuck(Duck duck) {
