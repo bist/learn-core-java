@@ -12,8 +12,9 @@ package bist.chapter05.homework;
 /**
  * @version 1.0
  */
-public class Day5HomeworkTest {
-
-   // more architectural homework than practical implementation
-
+public enum Title {
+   DIRECTOR,
+   SENIOR_DIRECTOR,
+   CIO,
+   CEO
 }

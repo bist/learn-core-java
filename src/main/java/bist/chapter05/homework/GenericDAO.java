@@ -12,8 +12,10 @@ package bist.chapter05.homework;
 /**
  * @version 1.0
  */
-public class Day5HomeworkTest {
+public class GenericDAO implements DAO {
 
-   // more architectural homework than practical implementation
-
+   public GenericDAO() {
+      // find a way to create sample data based on the generic type
+      // so that you can return some sample data when it is invoked
+   }
 }

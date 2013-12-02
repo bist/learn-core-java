@@ -36,20 +36,18 @@ public class GenericsBasics {
     *
     * */
 
-    public static void main (String [] args){
-        List myIntList = new ArrayList(); // ==> No Type definition
-        myIntList.add(new Integer(0));
-        Integer x = (Integer) myIntList.get(0); // ==> Casting required
+   public static void main(String[] args) {
+      List myIntList = new ArrayList(); // ==> No Type definition
+      myIntList.add(new Integer(0));
+      Integer x = (Integer) myIntList.get(0); // ==> Casting required
 
 
-        List<Integer> myNewIntList = new ArrayList<Integer>(); // Integer type defined
-        myNewIntList.add(new Integer(0));
-        Integer y = myNewIntList.get(0); // ==> No casting
+      List<Integer> myNewIntList = new ArrayList<Integer>(); // Integer type defined
+      myNewIntList.add(new Integer(0));
+      Integer y = myNewIntList.get(0); // ==> No casting
 
 
-
-
-    }
+   }
 
 
 }

@@ -48,33 +48,33 @@ public class CollectionsBasics {
        *
        * */
 
-    public static void main(String [] args){
-        String []  myArray = {"a","b","c","d","e"};
-        Collection <String> myList  = new ArrayList<String>();
+   public static void main(String[] args) {
+      String[] myArray = {"a", "b", "c", "d", "e"};
+      Collection<String> myList = new ArrayList<String>();
 
-        //addAll : Arrays import to Collections:
-        myList.addAll(Arrays.asList(myArray));
-        System.out.println(myList);
-        //removeAll,
+      //addAll : Arrays import to Collections:
+      myList.addAll(Arrays.asList(myArray));
+      System.out.println(myList);
+      //removeAll,
 
-        myList.add("1");
-        myList.add("2");
+      myList.add("1");
+      myList.add("2");
 
-        //Iterators, hasNext,next
-        Iterator iterator = myList.iterator();
-        while(iterator.hasNext()){
-            Object object = iterator.next();
-            System.out.print(object);
-        }
+      //Iterators, hasNext,next
+      Iterator iterator = myList.iterator();
+      while (iterator.hasNext()) {
+         Object object = iterator.next();
+         System.out.print(object);
+      }
 
-        System.out.println("\nsize: "+myList.size());
-        //Iterating with for each (
-        for(Object object : myList) {
-            System.out.print(object);
-        }
-        System.out.println();
+      System.out.println("\nsize: " + myList.size());
+      //Iterating with for each (
+      for (Object object : myList) {
+         System.out.print(object);
+      }
+      System.out.println();
 
-    }
+   }
 
 
 }

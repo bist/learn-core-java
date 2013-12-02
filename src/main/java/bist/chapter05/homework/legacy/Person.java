@@ -7,13 +7,13 @@
  * All rights reserved. Copyright (c) 2013.
  ******************************************************************************/
 
-package bist.chapter05.homework;
+package bist.chapter05.homework.legacy;
 
 /**
  * @version 1.0
  */
-public class Day5HomeworkTest {
+public class Person {
 
-   // more architectural homework than practical implementation
+   // fill this in
 
 }

@@ -7,13 +7,34 @@
  * All rights reserved. Copyright (c) 2013.
  ******************************************************************************/
 
-package bist.chapter05.homework;
+package bist.chapter05.homework.legacy;
+
+import bist.chapter05.homework.Title;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * @version 1.0
  */
-public class Day5HomeworkTest {
+public class ManagerDAO {
+   Manager findBy(double id) {
+      return null;
+   }
 
-   // more architectural homework than practical implementation
+   List<Manager> filterBy(int age) {
+      return null;
+   }
 
+   List<Manager> wildcardFilterBy(String name) {
+      return null;
+   }
+
+   Map<Integer, Manager> groupBy(int age) {
+      return null;
+   }
+
+   Map<Title, Manager> groupBy(Title title) {
+      return null;
+   }
 }

@@ -28,75 +28,75 @@ public class Mapler {
     * */
 
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 
-        Map mapA = new HashMap();
-        Map mapB = new TreeMap();
-
-
-        mapA.put("key1", "element 1");
-        mapA.put("key2", "element 2");
-        mapA.put("key3", "element 3");
-
-        String element1 = (String) mapA.get("key1");
-        System.out.println("element1 : " + element1);
-
-        // key iterator
-        Iterator keyIterator = mapA.keySet().iterator();
-
-        // value iterator
-        Iterator valueIterator = mapA.values().iterator();
-
-        // Iterationg with keys:
-        while (keyIterator.hasNext()) {
-            Object key = keyIterator.next();
-            Object value = mapA.get(key);
-            System.out.println(key + "-" + value);
-        }
-
-        //access via new for-loop
-        for(Object key : mapA.keySet()) {
-            Object value = mapA.get(key);
-            System.out.println(key + "--" +value);
-        }
-
-        // Iterationg with values:
-        while (valueIterator.hasNext()) {
-            System.out.println(valueIterator.next());
-        }
-
-        //Treemap definition with Generics:
-        SortedMap< String, String> map2 = new TreeMap< String, String>();
-        map2.put("key1", "J");
-        map2.put("key4", "M");
-        map2.put("key3", "L");
-        map2.put("key2", "K");
-
-        System.out.print("TreeMap Keys:");
-        displayAll(map2.keySet());
-        System.out.print("TreeMap Values:");
-        displayAll(map2.values());
-
-        LinkedHashMap map3 = new LinkedHashMap();
-        map3.put("key1", "JJJ");
-        map3.put("key4", "MMM");
-        map3.put("key2", "KKK");
-        map3.put("key3", "LLL");
-        System.out.print("LinkedHashMap Keys:");
-        displayAll(map3.keySet());
-        System.out.print("LinkedHashMap Values:");
-        displayAll(map3.values());
+      Map mapA = new HashMap();
+      Map mapB = new TreeMap();
 
 
-    }
+      mapA.put("key1", "element 1");
+      mapA.put("key2", "element 2");
+      mapA.put("key3", "element 3");
 
-    static void displayAll(Collection col) {
-        Iterator itr = col.iterator();
-        while (itr.hasNext()) {
-            String str = (String) itr.next();
-            System.out.print(str + " ");
-        }
-        System.out.println();
-    }
+      String element1 = (String) mapA.get("key1");
+      System.out.println("element1 : " + element1);
+
+      // key iterator
+      Iterator keyIterator = mapA.keySet().iterator();
+
+      // value iterator
+      Iterator valueIterator = mapA.values().iterator();
+
+      // Iterationg with keys:
+      while (keyIterator.hasNext()) {
+         Object key = keyIterator.next();
+         Object value = mapA.get(key);
+         System.out.println(key + "-" + value);
+      }
+
+      //access via new for-loop
+      for (Object key : mapA.keySet()) {
+         Object value = mapA.get(key);
+         System.out.println(key + "--" + value);
+      }
+
+      // Iterationg with values:
+      while (valueIterator.hasNext()) {
+         System.out.println(valueIterator.next());
+      }
+
+      //Treemap definition with Generics:
+      SortedMap<String, String> map2 = new TreeMap<String, String>();
+      map2.put("key1", "J");
+      map2.put("key4", "M");
+      map2.put("key3", "L");
+      map2.put("key2", "K");
+
+      System.out.print("TreeMap Keys:");
+      displayAll(map2.keySet());
+      System.out.print("TreeMap Values:");
+      displayAll(map2.values());
+
+      LinkedHashMap map3 = new LinkedHashMap();
+      map3.put("key1", "JJJ");
+      map3.put("key4", "MMM");
+      map3.put("key2", "KKK");
+      map3.put("key3", "LLL");
+      System.out.print("LinkedHashMap Keys:");
+      displayAll(map3.keySet());
+      System.out.print("LinkedHashMap Values:");
+      displayAll(map3.values());
+
+
+   }
+
+   static void displayAll(Collection col) {
+      Iterator itr = col.iterator();
+      while (itr.hasNext()) {
+         String str = (String) itr.next();
+         System.out.print(str + " ");
+      }
+      System.out.println();
+   }
 
 }

@@ -12,8 +12,8 @@ package bist.chapter05.homework;
 /**
  * @version 1.0
  */
-public class Day5HomeworkTest {
+public interface DAO {
 
-   // more architectural homework than practical implementation
+   // do your magic here and create an implementation of this interface
 
 }

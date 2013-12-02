@@ -11,32 +11,32 @@ package bist.chapter05.generics;
 
 public class GenericClassTwoPar {
 
-    public static void main(String a[]){
+   public static void main(String a[]) {
 
-        NewBox<String, Integer> sample
-                = new NewBox<String, Integer>("HELLO", 100);
-        sample.printTypes();
-    }
+      NewBox<String, Integer> sample
+            = new NewBox<String, Integer>("HELLO", 100);
+      sample.printTypes();
+   }
 }
 
 /**
  * Simple generics class with two type parameters U, V.
  */
-class NewBox<U, V>{
+class NewBox<U, V> {
 
-    //type U object reference
-    private U objUreff;
-    //type V object reference
-    private V objVreff;
+   //type U object reference
+   private U objUreff;
+   //type V object reference
+   private V objVreff;
 
-    //constructor to accept object type U and object type V
-    public NewBox(U objU, V objV){
-        this.objUreff = objU;
-        this.objVreff = objV;
-    }
+   //constructor to accept object type U and object type V
+   public NewBox(U objU, V objV) {
+      this.objUreff = objU;
+      this.objVreff = objV;
+   }
 
-    public void printTypes(){
-        System.out.println("U Type: "+this.objUreff.getClass().getName());
-        System.out.println("V Type: "+this.objVreff.getClass().getName());
-    }
+   public void printTypes() {
+      System.out.println("U Type: " + this.objUreff.getClass().getName());
+      System.out.println("V Type: " + this.objVreff.getClass().getName());
+   }
 }

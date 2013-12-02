@@ -41,57 +41,57 @@ public class Queuelar {
     *           - LinkedTransferQueue — an unbounded TransferQueue based on linked nodes
     */
 
-    public static void main (String [] args){
+   public static void main(String[] args) {
 
-        Queue queueA = new LinkedList();
-        Queue queueB = new PriorityQueue();
-        Deque dequeC = new ArrayDeque();
+      Queue queueA = new LinkedList();
+      Queue queueB = new PriorityQueue();
+      Deque dequeC = new ArrayDeque();
 
-        queueA.add("element 12");
-        queueA.add("element 2");
-        queueA.add("element 3");
-
-
-        Object firstElement = queueA.element();
-        System.out.println("firstElement : "+ firstElement);
-
-        //Removing from queue
-        queueA.remove(firstElement);
-
-        //access via new for-loop
-        for(Object object : queueA) {
-            String element = (String) object;
-            System.out.println(element);
-        }
+      queueA.add("element 12");
+      queueA.add("element 2");
+      queueA.add("element 3");
 
 
-        System.out.println("Deque:");
-        Deque dequeA = new LinkedList();
+      Object firstElement = queueA.element();
+      System.out.println("firstElement : " + firstElement);
 
-        dequeA.add     ("element 1"); //add element
-        dequeA.add     ("element 2"); //add element
-        dequeA.addLast ("element 3"); //add element at tail
-        dequeA.addFirst("element 0"); //add element at head
+      //Removing from queue
+      queueA.remove(firstElement);
 
-
-        Object siradaki = dequeA.element();
-        System.out.println("ilk : " + siradaki);
-        Object ilk = dequeA.getFirst();
-        System.out.println("ilk : " + ilk);
-        Object son  = dequeA.getLast();
-        System.out.println("son : " + son);
-
-        //Remove
-        dequeA.remove(ilk);
+      //access via new for-loop
+      for (Object object : queueA) {
+         String element = (String) object;
+         System.out.println(element);
+      }
 
 
-        for(Object object : dequeA) {
-            String element = (String) object;
-            System.out.println(element);
-        }
+      System.out.println("Deque:");
+      Deque dequeA = new LinkedList();
+
+      dequeA.add("element 1"); //add element
+      dequeA.add("element 2"); //add element
+      dequeA.addLast("element 3"); //add element at tail
+      dequeA.addFirst("element 0"); //add element at head
 
 
-    }
+      Object siradaki = dequeA.element();
+      System.out.println("ilk : " + siradaki);
+      Object ilk = dequeA.getFirst();
+      System.out.println("ilk : " + ilk);
+      Object son = dequeA.getLast();
+      System.out.println("son : " + son);
+
+      //Remove
+      dequeA.remove(ilk);
+
+
+      for (Object object : dequeA) {
+         String element = (String) object;
+         System.out.println(element);
+      }
+
+
+   }
 
 
 }
