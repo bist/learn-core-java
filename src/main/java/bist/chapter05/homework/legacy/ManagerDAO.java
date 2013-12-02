@@ -30,11 +30,11 @@ public class ManagerDAO {
       return null;
    }
 
-   Map<Integer, Manager> groupBy(int age) {
+   Map<Integer, List<Manager>> groupBy(int age) {
       return null;
    }
 
-   Map<Title, Manager> groupBy(Title title) {
+   Map<Title, List<Manager>> groupBy(Title title) {
       return null;
    }
 }
