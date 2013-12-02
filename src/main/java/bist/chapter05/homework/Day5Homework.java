@@ -16,7 +16,7 @@ public class Day5Homework {
    /**
     * OBJECTIVE:
     *
-    * There are many DAO implementation given. Remove all of them and
+    * There are many DAO implementations given. Remove all of them and
     * create a DAO interface that supports various person types like:
     *
     * Person, Student, Manager kinda types. For instance findBy method
