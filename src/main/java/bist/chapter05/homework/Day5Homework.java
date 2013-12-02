@@ -30,8 +30,8 @@ public class Day5Homework {
     * *tan* => Istanbul, Dagistan, Tandogan, Katana
     *
     * - Make sure that we are not able to create a generic DAO for all types like
-    * String, BigDecimal, etc.. It should be only types where it has name, age, title
-    * int it.
+    * String, BigDecimal, etc.. It should be only types where it has id, name, age, title
+    * in it.
     *
     */
 }
