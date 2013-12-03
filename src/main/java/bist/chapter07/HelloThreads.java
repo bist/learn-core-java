@@ -4,13 +4,21 @@ package bist.chapter07;
  * @version 1.0
  */
 public class HelloThreads {
+   /**
+    * - Thread, Runnable, Daemon threads
+    * - Thread States (new, runnable, running, blocked, waiting, blocked waiting, terminated)
+    * - ExecutorService, thread pools
+    * - Race conditions, deadlocks
+    * - Synchronized
+    * - Wait/notify/notifyAll
+    * - Atomic variables
+    * - Locks
+    * - Futures, Promises
+    */
    public static void main(String[] args) throws Exception {
       // Simple threads with Thread base
       Thread t1 = new AThread("THREAD-1");
       Thread t2 = new AThread("THREAD-2");
-
-      t1.join();
-      t2.join();
 
       System.out.println("Created threads..");
       t1.start();
@@ -20,9 +28,6 @@ public class HelloThreads {
       // Simple threads with Runnable interface
       Thread t3 = new Thread(new BThread("THREAD-3"));
       Thread t4 = new Thread(new BThread("THREAD-4"));
-
-      t3.join();
-      t4.join();
 
       System.out.println("Created threads..");
       t3.start();
