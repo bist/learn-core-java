@@ -14,6 +14,9 @@ import java.util.StringTokenizer;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @version 1.0
@@ -23,6 +26,7 @@ public class ProducersAndConsumers {
       Wire cable = new Coax();
 //      Wire cable = new Fiber();
 //      Wire cable = new Infiniband();
+//      Wire cable = new TenG();
       Caller caller = new Caller("CALLER", cable);
       Callee callee = new Callee("CALLEE", cable);
 
@@ -88,6 +92,53 @@ class Infiniband implements Wire {
       this.data = data;
 
       notifyAll();
+   }
+}
+
+class TenG implements Wire {
+   private String data;
+   private boolean hasValue = false;
+
+   private final Lock key = new ReentrantLock();
+   private final Condition canWrite = key.newCondition();
+   private final Condition canRead = key.newCondition();
+
+   @Override
+   public String getData() throws Exception {
+      String dataRead = null;
+
+      key.lock();
+      try {
+         while(!hasValue) {
+            canRead.await();
+         }
+
+         hasValue = false;
+         dataRead = this.data;
+
+         canWrite.signal();
+      } finally {
+         key.unlock();
+      }
+
+      return dataRead;
+   }
+
+   @Override
+   public void setData(String data) throws Exception {
+      key.lock();
+      try {
+         while(hasValue) {
+            canWrite.await();
+         }
+
+         hasValue = true;
+         this.data = data;
+
+         canRead.signal();
+      } finally {
+         key.unlock();
+      }
    }
 }
 

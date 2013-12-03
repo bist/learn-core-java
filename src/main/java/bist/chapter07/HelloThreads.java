@@ -11,8 +11,8 @@ public class HelloThreads {
     * - Race conditions, deadlocks
     * - Synchronized
     * - ArrayBlockingQueues
-    * - Locks
     * - Wait/notify/notifyAll
+    * - Locks, Conditions
     * - Atomic variables
     * - Futures, Promises
     */
