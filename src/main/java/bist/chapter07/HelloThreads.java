@@ -13,8 +13,6 @@ public class HelloThreads {
     * - ArrayBlockingQueues
     * - Wait/notify/notifyAll
     * - Locks, Conditions
-    * - Atomic variables
-    * - Futures, Promises
     */
    public static void main(String[] args) throws Exception {
       // Simple threads with Thread base
