@@ -30,11 +30,11 @@ public class PersonDAO {
       return null;
    }
 
-   Map<Integer, List<Person>> groupBy(int age) {
+   Map<Integer, List<Person>> groupByAge() {
       return null;
    }
 
-   Map<Title, List<Person>> groupBy(Title title) {
+   Map<Title, List<Person>> groupByTitle() {
       return null;
    }
 }
