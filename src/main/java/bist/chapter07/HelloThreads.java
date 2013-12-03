@@ -10,9 +10,10 @@ public class HelloThreads {
     * - ExecutorService, thread pools
     * - Race conditions, deadlocks
     * - Synchronized
+    * - ArrayBlockingQueues
+    * - Locks
     * - Wait/notify/notifyAll
     * - Atomic variables
-    * - Locks
     * - Futures, Promises
     */
    public static void main(String[] args) throws Exception {
