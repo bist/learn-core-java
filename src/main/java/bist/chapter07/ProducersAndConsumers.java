@@ -18,10 +18,11 @@ import java.util.concurrent.Executors;
 /**
  * @version 1.0
  */
-public class ArrayBlockingQueues {
+public class ProducersAndConsumers {
    public static void main(String[] args) {
       Wire cable = new Coax();
-//      Fiber cable = new Fiber();
+//      Wire cable = new Fiber();
+//      Wire cable = new Infiniband();
       Caller caller = new Caller("CALLER", cable);
       Callee callee = new Callee("CALLEE", cable);
 
@@ -58,6 +59,35 @@ class Fiber implements Wire {
 
    public void setData(String data) throws Exception {
       this.data.put(data);
+   }
+}
+
+class Infiniband implements Wire {
+   private String data;
+   private boolean hasValue = false;
+
+   public synchronized String getData() throws Exception {
+      while (!hasValue) {
+         // there is no value to consume
+         wait();
+      }
+
+      hasValue = false; // 'coz we are consuming now
+      notifyAll();
+
+      return data;
+   }
+
+   public synchronized void setData(String data) throws Exception {
+      while (hasValue) {
+         // we cannot put another value, it's not consumed yet
+         wait();
+      }
+
+      hasValue = true; // now they can consume
+      this.data = data;
+
+      notifyAll();
    }
 }
 
