@@ -7,7 +7,7 @@
  * All rights reserved. Copyright (c) 2013.
  ******************************************************************************/
 
-package bist.chapter08;
+package bist.chapter08.jdbc;
 
 /**
  * @version 1.0
