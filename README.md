@@ -16,11 +16,15 @@ First thing you need to do is to create a file called `AUTHOR`, you can do this 
 
 Keep in mind that this repo **is not** designed for **checking in** your personal files. So bare with the instructors until the last day to check in. The repo contains branches with day/session names. Any session that you want to work on, just type the branch name with topic like below:
 
+    git checkout -t origin/day1-hello
+
+This will create a local branch of the remote branch specified in the command. To see all available sessions, type:
+
+    git branch -a
+
+After checking out the branch you want to work on like above, anytime you want to work on the branch again, you can just use the local branch like:
+
     git checkout day1-hello
-
-To see all available sessions, type:
-
-    git branch
 
 And now you can focus on the files introduced only in this session. Once you are ready to work on the homeworks, go to the master branch and do your magic there:
 
